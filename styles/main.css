@@ -1,0 +1,255 @@
+:root {
+  --lato: "Lato", sans-serif;
+  --spoti-blue: #3F91EA;
+  --spoti-green: #00c94a;
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--lato);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 15px;
+}
+
+/* ----------------------------HEADER---------------------------- */
+
+#top {
+  width: 100%;
+  height: 60px;
+  padding: 15px;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.logo,
+.menu-icon {
+  height: 30px;
+}
+
+.header-menu {
+  display: none;
+  font-size: 1.4rem;
+}
+
+/* ----------------------------MAIN & BLUE---------------------------- */
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blue {
+  background-color: var(--spoti-blue);
+  color: white;
+}
+
+.title {
+  margin-top: 150px;
+  font-size: 4.2rem;
+}
+
+.blue-subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 15px 0;
+}
+
+.button {
+  height: 40px;
+  background-color: var(--spoti-green);
+  display: block;
+  width: 100%;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 20px;
+  margin: 15px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: var(--spoti-green);
+}
+
+.premium-discl {
+  font-size: 1rem;
+  width: 80%;
+  display: block;
+  margin-bottom: 20px;
+  line-height: 150%;
+}
+.img-dancer {
+  display: none;
+}
+
+/* ----------------------------WHITE---------------------------- */
+
+.white {
+  align-items: center;
+}
+
+.why-premium {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin-top: 40px;
+  line-height: 120%;
+}
+
+.benefits {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.benefit-icons {
+  text-align: left;
+  width: 80px;
+}
+
+.text {
+  margin: 20px;
+}
+
+.h3 {
+  font-size: 1.6rem;
+  margin: 10px 0px;
+}
+
+.description {
+  margin: 10px 0px;
+  font-size: 1.4rem;
+  color: grey;
+}
+
+/* ----------------------------FOOTER---------------------------- */
+
+.footer {
+  width: 100%;
+  color: grey;
+  background-color: black;
+  font-size: 1.2rem;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  line-height: 150%;
+}
+.spain-flag {
+  width: 15px;
+  margin-left: 5px;
+  border-radius: 1px;
+}
+
+.copy {
+  text-align: right;
+}
+
+/* ====================DESIGN FOR TABLET==================== */
+/* ====================DESIGN FOR TABLET==================== */
+
+@media all and (min-width: 768px) {
+  .container {
+    margin: 0 30px;
+  }
+
+  #top {
+    padding: 30px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .header-menu {
+    display: block;
+    color: white;
+  }
+
+  .hidden {
+    display: inline;
+    margin: 0 10px;
+  }
+
+  .title {
+    margin-top: 90px;
+    max-width: 740px;
+    font-size: 5.4rem;
+    padding: 40px 0 20px 0;
+  }
+  .blue-subtitle {
+    font-size: 2.2rem;
+    padding-bottom: 20px;
+  }
+  .button {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  .blue {
+    background-image: url("../images/premium_dancer.png");
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-position: bottom right;
+    background-size: 300px;
+  }
+  .benefits-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .benefits {
+    width: 50%;
+  }
+  .h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ====================DESIGN FOR DESKTOP==================== */
+/* ====================DESIGN FOR DESKTOP==================== */
+
+@media all and (min-width: 1024px) {
+
+  .title {
+    font-size: 6.6rem;
+    padding: 40px 0 20px 0;
+  }
+
+  .blue {
+    background-size: 350px;
+  }
+
+  .benefits-box {
+    display: column;
+  }
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+  }
+
+  .text {
+    height: 100px;
+    text-align: center;
+  }

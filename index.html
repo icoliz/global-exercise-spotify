@@ -4,7 +4,116 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Spotify</title>
   </head>
-  <body></body>
+  <body>
+    <header id="top">
+      <img class="logo" src="./images/logo.png" alt="Spotify logo" />
+      <img
+        class="menu-icon"
+        src="./images/menu-icon.png"
+        alt="Spotify menu icon"
+      />
+      <nav class="header-menu">
+        <ul class="menu-list">
+          <li class="hidden">Premium</li>
+          <li class="hidden">Ayuda</li>
+          <li class="hidden">Descarga</li>
+          <li class="hidden">|</li>
+          <li class="hidden">Registrarse</li>
+          <li class="hidden">Iniciar sesión</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="blue">
+        <div class="container">
+          <h1 class="title">Prueba Premium gratis 3 meses</h1>
+          <p class="blue-subtitle">
+            Escucha millones de canciones sin anuncios, a la carta y sin
+            conexión
+          </p>
+          <button class="button">Ver planes</button>
+          <small class="premium-discl">
+            Rigen términos y condiciones. Los tres meses gratis no están
+            disponibles para usuarios que ya hayan probado Premium.
+          </small>
+        </div>
+      </section>
+      <section class="container white">
+        <h2 class="why-premium">¿Por qué pasarte a Premium?</h2>
+        <div class="benefits-box">
+          <article class="benefits">
+            <img
+              class="benefit-icons"
+              src="./images/benefit-1.png"
+              alt="music download icon"
+            />
+            <div class="text">
+              <h3 class="h3">Descarga música</h3>
+              <p class="description">Llévala siempre contigo.</p>
+            </div>
+          </article>
+          <article class="benefits">
+            <img
+              class="benefit-icons"
+              src="./images/benefit-2.png"
+              alt="alert icon in mobile"
+            />
+            <div class="text">
+              <h3 class="h3">Sin anuncios</h3>
+              <p class="description">Disfruta de música sin interrupciones.</p>
+            </div>
+          </article>
+          <article class="benefits">
+            <img
+              class="benefit-icons"
+              src="./images/benefit-3.png"
+              alt="music icon"
+            />
+            <div class="text">
+              <h3 class="h3">Escucha lo que quieras</h3>
+              <p class="description">Incluso desde el móvil.</p>
+            </div>
+          </article>
+          <article class="benefits">
+            <img
+              class="benefit-icons"
+              src="./images/benefit-4.png"
+              alt="play next icon"
+            />
+            <div class="text">
+              <h3 class="h3">Salta todas las canciones que quieras</h3>
+              <p class="description">Simplemente dale a la siguiente.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer-menu">
+          <ul class="disclaimer">
+            <li><a href="#">Legal</a></li>
+            <li>
+              <a href="#">Cookies</a>
+            </li>
+            <li><a href="#">Información sobre los anuncios</a></li>
+          </ul>
+          <ul class="copy">
+            <li>España <img src="images/spain.png" class="spain-flag" /></li>
+            <li>&copy 2021 Sopotify AB</li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>

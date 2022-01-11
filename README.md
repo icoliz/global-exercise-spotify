@@ -1,1 +1,3 @@
-# my-code
+# Global Exercise Spotify
+
+#### by Ico Lizhen
